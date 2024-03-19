@@ -39,6 +39,22 @@ M.general = {
         -- Toggle compiler results
         vim.api.nvim_set_keymap('n', '<S-F7>', "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true }),
     --
+    ["gf"] = {"<cmd>lua require('telescope.builtin').lsp_definitions()<cr>", "Go to definition"},
+    ["<leader>g"] = {"<cmd>lua require('telescope.builtin').lsp_references()<cr>", "Go to references"},
+    ["<leader>rn"] = {"<cmd>lua require('telescope.builtin').lsp_rename()<cr>", "Rename"},
+    ["<leader>ca"] = {"<cmd>lua require('telescope.builtin').lsp_code_actions()<cr>", "Code actions"},
+    ["<leader>gd"] = {"<cmd>lua require('telescope.builtin').lsp_document_diagnostics()<cr>", "Document diagnostics"},
+    ["<leader>gw"] = {"<cmd>lua require('telescope.builtin').lsp_workspace_diagnostics()<cr>", "Workspace diagnostics"},
+    ["<leader>gr"] = {"<cmd>lua require('telescope.builtin').lsp_references()<cr>", "References"},
+    ["<leader>gh"] = {"<cmd>lua require('telescope.builtin').lsp_implementations()<cr>", "Implementations"},
+    ["<leader>gt"] = {"<cmd>lua require('telescope.builtin').lsp_type_definitions()<cr>", "Type definitions"},
+    ["<leader>gs"] = {"<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>", "Document symbols"},
+    ["<leader>gw"] = {"<cmd>lua require('telescope.builtin').lsp_workspace_symbols()<cr>", "Workspace symbols"},
+    ["<leader>gW"] = {"<cmd>lua require('telescope.builtin').lsp_dynamic_workspace_symbols()<cr>", "Dynamic workspace symbols"},
+    ["<leader>gD"] = {"<cmd>lua require('telescope.builtin').lsp_document_diagnostics()<cr>", "Document diagnostics"},
+    ["<leader>gW"] = {"<cmd>lua require('telescope.builtin').lsp_workspace_diagnostics()<cr>", "Workspace diagnostics"},
+    ["<leader>gR"] = {"<cmd>lua require('telescope.builtin').lsp_references()<cr>", "References"},
+    ["<leader>gH"] = {"<cmd>lua require('telescope.builtin').lsp_implementations()<cr>", "Implementations"},
 
     -- run C++ file
     ["<F2>"] = { "<cmd> :w | :!g++ % && ./a.out <cr>", "Run C++ file"},

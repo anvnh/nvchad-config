@@ -1,9 +1,9 @@
 local plugins = {
   {
-  "neovim/nvim-lspconfig",
-   config = function()
+    "neovim/nvim-lspconfig",
+    config = function()
       require "plugins.configs.lspconfig"
-   end,
+    end,
   },
   { "elkowar/yuck.vim" , lazy = false },  -- load a plugin at startup
   { "github/copilot.vim",

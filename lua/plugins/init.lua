@@ -1,6 +1,12 @@
 -- All plugins have lazy=true by default,to load a plugin on startup just lazy=false
 -- List of all default plugins & their definitions
 local default_plugins = {
+  {
+    "rmagatti/goto-preview",
+    config = function()
+      require('goto-preview').setup {}
+    end
+  },
 
   "nvim-lua/plenary.nvim",
 
@@ -150,6 +156,7 @@ local default_plugins = {
     end,
     config = function()
       require "plugins.configs.lspconfig"
+
     end,
   },
 

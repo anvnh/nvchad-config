@@ -62,4 +62,21 @@ require("lspconfig").lua_ls.setup {
   },
 }
 
+-- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+--   vim.lsp.diagnostic.on_publish_diagnostics, {
+--     underline = true,
+--     virtual_text = true,
+--     signs = true,
+--     update_in_insert = true
+--   }
+-- )
+--
+-- require'lspconfig'.ast_grep.setup{
+--   cmd = {'ast-grep'};
+--   filetypes = {'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'java', 'c', 'cpp', 'rust', 'python', 'ruby', 'go', 'lua', 'sh', 'bash', 'zsh', 'fish', 'powershell', 'bat', 'awk', 'sed', 'yaml', 'json', 'html', 'css', 'scss', 'less', 'stylus', 'graphql', 'markdown', 'vim', 'dockerfile', 'plaintext', 'csharp', 'php', 'r', 'haskell', 'ocaml', 'perl', 'scala', 'kotlin', 'swift', 'dart', 'elm', 'erlang', 'fsharp', 'julia', 'lisp', 'nim', 'purescript', 'reason', 'svelte', 'tcl', 'verilog', 'vhdl', 'zig', 'racket', 'scheme', 'clojure', 'fennel', 'moonscript', 'nix', 'toml', 'ini', 'nixos', 'nixexpr', 'nixcfg', 'nixenv', 'nixfile', 'nixopts', 'nixset', 'nixshell', 'nixstore', 'nixsys'};
+--   root_dir = function(fname)
+--     return vim.fn.getcwd() 
+--   end
+-- }
+
 return M
